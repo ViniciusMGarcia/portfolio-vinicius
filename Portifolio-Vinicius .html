@@ -1,0 +1,545 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Portfólio profissional de Vinicius Garcia, com experiência em rotinas operacionais, sistemas ERP, análise de processos e estudos de caso em tecnologia e negócios.">
+<meta name="theme-color" content="#0F2F2A"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+/* visual do estudo de caso: painel conceitual e fluxograma */
+.case-visual{margin-top:24px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface, #f7f9f7)}
+.case-visual-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:18px 20px;border-bottom:1px solid var(--line);background:var(--bg)}
+.case-visual-head h4{margin:0 0 5px;font-size:1rem}.case-visual-head p{margin:0;color:var(--muted);font-size:.85rem}
+.demo-label{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:5px 9px;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.demo-dashboard{padding:18px 20px 20px}.demo-dashboard-title{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.demo-columns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.demo-col{min-width:0;border:1px solid var(--line);border-radius:9px;padding:12px;background:var(--bg)}
+.demo-col h5{font-size:.77rem;margin:0 0 12px;display:flex;align-items:center;gap:7px}.demo-col h5:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+.demo-task{font-size:.8rem;line-height:1.45;border:1px solid var(--line);border-radius:7px;padding:10px;background:var(--surface, #f7f9f7);margin-top:8px}.demo-task small{display:block;margin-top:7px;color:var(--muted);font-size:.68rem}
+.flow-wrap{padding:22px 20px 24px;border-top:1px solid var(--line);background:var(--bg)}.flow-title{margin:0 0 5px;font-size:1rem}.flow-subtitle{margin:0 0 20px;color:var(--muted);font-size:.84rem}
+.flowchart{display:flex;flex-direction:column;align-items:center;gap:0}.flow-node{width:min(100%,360px);padding:12px 16px;text-align:center;border:1px solid var(--line);border-radius:9px;background:var(--bg);font-size:.86rem;line-height:1.4}.flow-node strong{display:block;font-size:.88rem;margin-bottom:3px}.flow-node span{color:var(--muted);font-size:.77rem}.flow-node.startend{background:var(--accent);color:white;border-color:var(--accent);border-radius:999px;width:min(100%,220px);font-weight:650}.flow-node.startend span{color:rgba(255,255,255,.85)}.flow-node.decision{border:2px solid var(--accent);background:var(--soft-accent, #eaf3ec);width:min(100%,300px);border-radius:12px}.flow-arrow{height:27px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:1.2rem;line-height:1}.flow-branches{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:min(100%,680px);position:relative}.flow-branch{display:flex;flex-direction:column;align-items:center;min-width:0}.flow-branch .flow-node{width:100%;max-width:300px}.branch-label{font-size:.72rem;font-weight:700;color:var(--accent);margin:0 0 7px;text-transform:uppercase;letter-spacing:.07em}.flow-note{margin:15px auto 0;max-width:680px;text-align:center;color:var(--muted);font-size:.78rem;line-height:1.5}
+@media(max-width:650px){.demo-columns{grid-template-columns:repeat(2,minmax(0,1fr))}.case-visual-head,.demo-dashboard,.flow-wrap{padding-left:14px;padding-right:14px}.flow-branches{gap:8px}.flow-branch .flow-node{padding:10px 8px;font-size:.77rem}.flow-node{font-size:.82rem}}
+@media(max-width:390px){.demo-columns{grid-template-columns:1fr}.flow-branches{grid-template-columns:1fr}.flow-branch .flow-node{max-width:100%}}
+
+</style></head><body>
+<title>Vinicius Garcia</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: faixa escura no topo e no contato, miolo claro com rótulo à esquerda e conteúdo à direita; todo o texto vem do currículo */
+:root{
+  --bg:#EDF3F0;
+  --surface:#DFEAE5;
+  --ink:#12201D;
+  --muted:#52625D;
+  --line:#BFCFC8;
+  --accent:#0B6B5C;
+  --accent-soft:#DDEFEA;
+  --band:#0F2F2A;
+  --band-card:#16403A;
+  --band-ink:#EAF4F1;
+  --band-muted:#A8C3BC;
+  --band-line:#2B5A50;
+  --band-accent:#7BE0C7;
+  --band-accent-ink:#0A241F;
+  --font-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --font-body:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1614;
+    --surface:#1A2C27;
+    --ink:#E6EFEC;
+    --muted:#9AADA7;
+    --line:#355047;
+    --accent:#4FC9AE;
+    --accent-soft:#143A31;
+    --band:#123830;
+    --band-card:#18453C;
+    --band-line:#2F6155;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1614;
+  --surface:#1A2C27;
+  --ink:#E6EFEC;
+  --muted:#9AADA7;
+  --line:#355047;
+  --accent:#4FC9AE;
+  --accent-soft:#143A31;
+  --band:#123830;
+  --band-card:#18453C;
+  --band-line:#2F6155;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--font-display);text-wrap:balance;margin:0}
+p{margin:0}
+.label{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+
+/* topo fixo */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px;padding-block:12px}
+.brand{font-family:var(--font-display);font-weight:700;font-size:1.05rem;text-decoration:none;color:var(--ink)}
+.top nav{display:flex;flex-wrap:wrap;gap:4px 22px}
+.top nav a{font-size:.9rem;color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.top nav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* faixa escura */
+.band{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden}
+.band::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(var(--band-line) 1px,transparent 1px),linear-gradient(90deg,var(--band-line) 1px,transparent 1px);
+  background-size:56px 56px;opacity:.28;
+  -webkit-mask-image:linear-gradient(115deg,transparent 35%,#000 100%);mask-image:linear-gradient(115deg,transparent 35%,#000 100%);
+}
+.band .wrap{position:relative}
+.band .label{color:var(--band-muted)}
+.band a{color:var(--band-accent)}
+.band a:focus-visible,.band button:focus-visible{outline-color:var(--band-accent)}
+
+.hero{padding-block:72px 80px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:48px 64px;align-items:end}
+.hero h1{font-size:clamp(3rem,9vw,6rem);line-height:.94;font-weight:800;letter-spacing:-.04em;margin-top:18px}
+.hero .thesis{font-size:clamp(1.08rem,2.2vw,1.3rem);line-height:1.55;margin-top:28px;max-width:33em;color:var(--band-ink)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{display:inline-block;font:500 .95rem var(--font-body);text-decoration:none;padding:12px 22px;border-radius:6px;border:1px solid var(--band-accent);background:var(--band-accent);color:var(--band-accent-ink)}
+.band a.btn{color:var(--band-accent-ink)}
+.band a.btn.ghost{background:transparent;color:var(--band-accent)}
+.btn:hover{filter:brightness(1.07)}
+.sheet{background:var(--band-card);border:1px solid var(--band-line);border-radius:8px;padding:24px}
+.sheet dl{margin:16px 0 0;display:grid;gap:0}
+.sheet dl>div{padding-block:12px;border-top:1px solid var(--band-line)}
+.sheet dt{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--band-muted)}
+.sheet dd{margin:3px 0 0;font-size:.95rem}
+
+/* faixa de fatos */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--line)}
+.fact{padding:28px 24px 28px 0;display:grid;gap:4px;align-content:start}
+.fact+.fact{padding-left:24px;border-left:1px solid var(--line)}
+.fact b{font-family:var(--font-display);font-weight:800;font-size:2.4rem;line-height:1;letter-spacing:-.03em;color:var(--accent);font-variant-numeric:tabular-nums}
+.fact span{font-size:.88rem;color:var(--muted);max-width:18em}
+
+/* seções */
+.sec{border-bottom:1px solid var(--line);padding-block:72px;scroll-margin-top:56px}
+.sec .wrap{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr);gap:24px 56px;align-items:start}
+.sec-head{display:grid;gap:10px;position:sticky;top:calc(72px + env(safe-area-inset-top,0px))}
+.sec-head h2{font-size:clamp(1.6rem,3vw,2.1rem);line-height:1.1;letter-spacing:-.02em}
+.body{min-width:0}
+
+.about{display:grid;gap:20px;max-width:46em}
+.about .lead{font-family:var(--font-display);font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.4;letter-spacing:-.01em;font-weight:500}
+.about p:not(.lead){color:var(--muted)}
+.about .edge{padding-top:20px;border-top:1px solid var(--line)}
+.about .edge .label{display:block;margin-bottom:8px}
+
+/* experiência */
+.job{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:8px 32px;padding-block:32px;border-top:1px solid var(--line)}
+.job:first-child{border-top:0;padding-top:0}
+.job .when{font-family:var(--font-mono);font-size:.8rem;color:var(--accent);line-height:1.5}
+.job .pill{display:inline-block;margin-top:8px;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;background:var(--accent);color:var(--surface);padding:2px 8px;border-radius:4px}
+.job h3{font-size:1.45rem;line-height:1.2;letter-spacing:-.015em}
+.job .where{margin-top:4px;color:var(--muted);font-size:.95rem}
+.job ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:9px}
+.job li{position:relative;padding-left:20px;font-size:.96rem}
+.job li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--accent)}
+
+/* competências */
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 40px}
+.skills h3{font-size:1.1rem;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.88rem;padding:5px 11px;border-radius:5px;background:var(--surface);border:1px solid var(--line)}
+.edu{display:grid;gap:0}
+.edu .item{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:4px 32px;padding-block:22px;border-top:1px solid var(--line)}
+.edu .item:first-child{border-top:0;padding-top:0}
+.edu .when{font-family:var(--font-mono);font-size:.8rem;color:var(--accent);line-height:1.5}
+.edu h3{font-size:1.2rem;line-height:1.25}
+.edu .where{color:var(--muted);font-size:.95rem;margin-top:2px}
+
+/* projetos */
+.projects{display:grid;gap:24px}
+.project-intro{max-width:54em;color:var(--muted);margin-bottom:4px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px}
+.project-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-bottom:14px}
+.project-tag{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 8px;border-radius:4px}
+.project-type{font-size:.82rem;color:var(--muted)}
+.project h3{font-size:1.4rem;line-height:1.2;margin-bottom:12px}
+.project-problem{color:var(--muted);margin-bottom:20px}
+.project-problem strong{color:var(--ink)}
+.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.project-grid .label{display:block;margin-bottom:7px;color:var(--accent)}
+.project-grid p{font-size:.94rem}
+.project-result{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted)}
+.project-result strong{color:var(--ink)}
+@media (max-width:760px){.project-grid{grid-template-columns:1fr}.project{padding:18px}}
+
+/* contato */
+.contact{padding-block:72px 40px}
+.contact .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px 64px;align-items:start}
+.contact h2{font-size:clamp(2rem,5vw,3.4rem);line-height:1.02;letter-spacing:-.03em;margin-top:14px}
+.rows{border-top:1px solid var(--band-line)}
+.row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:18px 0;border-bottom:1px solid var(--band-line)}
+.row .k{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--band-muted)}
+.row .val{min-width:0;overflow-wrap:anywhere;font-size:1.05rem}
+.row button{font:500 .8rem var(--font-mono);background:transparent;color:var(--band-accent);border:1px solid var(--band-line);border-radius:5px;padding:6px 12px;cursor:pointer}
+.row button:hover{border-color:var(--band-accent)}
+.foot{padding-block:28px 36px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:.84rem;color:var(--band-muted)}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:6px;font-size:.88rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+.toast.on{opacity:1}
+
+@media (max-width:900px){
+  .sec .wrap{grid-template-columns:1fr}
+  .sec-head{position:static}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fact:nth-child(3){padding-left:0;border-left:0}
+  .fact:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:760px){
+  .hero,.contact .grid,.skills{grid-template-columns:1fr}
+  .hero{padding-block:48px 56px}
+  .sec{padding-block:48px}
+  .job,.edu .item{grid-template-columns:1fr}
+  .contact{padding-block:48px 24px}
+}
+@media (max-width:420px){
+  .facts{grid-template-columns:1fr}
+  .fact,.fact+.fact{padding:20px 0;border-left:0}
+  .fact+.fact{border-top:1px solid var(--line)}
+}
+/* Contraste reforçado no fluxograma: caixas de decisão escuras, sem fundo branco e com texto legível */
+.flow-node.decision{background:#16483E!important;color:#EAF4F1!important;border:2px solid #4FC9AE!important;box-shadow:0 0 0 1px rgba(79,201,174,.08)}
+.flow-node.decision strong{color:#F4FFFB!important}
+.flow-node.decision span{color:#C2DDD4!important}
+@media(prefers-color-scheme:light){.flow-node.decision{background:#16483E!important;color:#EAF4F1!important}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Vinicius Garcia</a>
+    <nav aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#competencias">Competências</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="band" aria-labelledby="nome">
+    <div class="wrap hero">
+      <div>
+        <span class="label">Processos · Sistemas ERP · Operações</span>
+        <h1 id="nome">Vinicius Garcia</h1>
+        <p class="thesis">Experiência em rotinas operacionais, atendimento, controles financeiros e uso diário de sistemas ERP. Busco uma oportunidade em análise de processos ou suporte a sistemas, contribuindo com organização, documentação e melhoria contínua.</p>
+        <div class="cta">
+          <a class="btn" href="#experiencia">Ver experiência</a>
+          <a class="btn ghost" href="#contato">Contato</a>
+        </div>
+      </div>
+      <aside class="sheet" aria-label="Resumo rápido">
+        <span class="label">Resumo rápido</span>
+        <dl>
+          <div><dt>Base</dt><dd>Marília, SP</dd></div>
+          <div><dt>Formação</dt><dd>Análise e Desenvolvimento de Sistemas, UNIMAR (em andamento)</dd></div>
+          <div><dt>Experiência</dt><dd>Operações · Administrativo · Sistemas corporativos</dd></div>
+          <div><dt>Ferramentas</dt><dd>ERP · Trello · Notion · Miro · Excel · Pacote Office</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="facts" role="list">
+      <div class="fact" role="listitem"><b>3</b><span>segmentos: varejo, agronegócio e governo</span></div>
+      <div class="fact" role="listitem"><b>3</b><span>experiências profissionais desde set 2022</span></div>
+      <div class="fact" role="listitem"><b>ERP</b><span>experiência prática em rotinas de sistemas</span></div>
+      <div class="fact" role="listitem"><b>2026</b><span>previsão de conclusão da graduação, conforme planejamento atual</span></div>
+    </div>
+  </div>
+
+  <section class="sec" id="sobre" aria-labelledby="t-sobre">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">Resumo profissional</span>
+        <h2 id="t-sobre">Sobre</h2>
+      </div>
+      <div class="body about">
+        <p class="lead">Profissional com experiência em rotinas operacionais e administrativas, utilização de sistemas ERP, conferência de informações e atendimento a demandas internas e de clientes.</p>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas na UNIMAR, com conhecimentos em Scrum, Kanban, organização de backlog, histórias de usuário, critérios de aceite e documentação funcional. Tenho interesse em análise de processos e suporte a sistemas empresariais, aproximando as necessidades da operação das soluções de tecnologia.</p>
+        <div class="edge">
+          <span class="label">Diferenciais</span>
+          <p>Vivência em diferentes ambientes organizacionais, com contato com sistemas corporativos, registros operacionais, controles administrativos e atendimento. Nos estudos de caso do portfólio, aplico esse conhecimento para mapear etapas, organizar requisitos, propor melhorias e definir indicadores para acompanhar resultados. Os estudos são conceituais e não representam implantações realizadas em empresas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experiencia" aria-labelledby="t-exp">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">Trajetória</span>
+        <h2 id="t-exp">Experiência profissional</h2>
+      </div>
+      <div class="body">
+        <article class="job">
+          <div>
+            <div class="when">Jul 2024 – Presente</div>
+            <span class="pill">Atual</span>
+          </div>
+          <div>
+            <h3>Operador de Caixa</h3>
+            <p class="where">Waniferro · Marília, SP</p>
+            <ul>
+              <li>Utilização diária do sistema ERP nas rotinas de caixa e nos processos operacionais da empresa.</li>
+              <li>Identificação de inconsistências nos registros e atenção a situações que podem gerar erros ou retrabalho.</li>
+              <li>Conferência de informações financeiras e cuidado com a consistência dos registros.</li>
+              <li>Atendimento ao cliente e resolução de ocorrências do dia a dia.</li>
+              <li>Controle do fluxo de caixa e acompanhamento de entradas e saídas.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="when">Ago 2023 – Jun 2024</div>
+          <div>
+            <h3>Auxiliar Administrativo</h3>
+            <p class="where">Supermercado Colibri · Marília, SP</p>
+            <ul>
+              <li>Apoio à organização de rotinas administrativas e operacionais.</li>
+              <li>Utilização de ERP para gestão de estoque, controle de inventário e documentação.</li>
+              <li>Suporte a usuários internos e diferentes áreas do negócio.</li>
+              <li>Contato com rotinas de estoque, inventário e documentação, contribuindo para a organização dos fluxos de trabalho.</li>
+              <li>Atendimento e relacionamento com clientes e fornecedores.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="when">Set 2022 – Ago 2023</div>
+          <div>
+            <h3>Estagiário Administrativo</h3>
+            <p class="where">CONAB, Companhia Nacional do Abastecimento · Garça, SP</p>
+            <ul>
+              <li>Processamento e análise de dados em sistemas corporativos e ERP governamental.</li>
+              <li>Geração de relatórios gerenciais para apoio à tomada de decisão.</li>
+              <li>Organização, digitalização e gestão documental de processos internos.</li>
+              <li>Apoio administrativo em múltiplas frentes, desenvolvendo visão sistêmica do negócio.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="projetos" aria-labelledby="t-projetos">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">Aplicação prática</span>
+        <h2 id="t-projetos">Projetos e estudos de caso</h2>
+      </div>
+      <div class="body projects">
+        <p class="project-intro">Estudos de caso demonstrativos para apresentar minha forma de analisar problemas, organizar informações e propor melhorias. São propostas conceituais, não projetos implementados em empresas.</p>
+        <p class="project-intro">Em cada estudo, separo o problema, a análise, a solução proposta, os entregáveis e a forma de avaliar o resultado. Os exemplos são conceituais e servem para demonstrar meu raciocínio; não apresento métricas de impacto sem dados de uma implantação real.</p>
+        <article class="project">
+          <div class="project-top"><span class="project-tag">Estudo de caso 01</span><span class="project-type">Processos · Logística · ERP</span></div>
+          <h3>Organização do fluxo de entregas</h3>
+          <p class="project-problem"><strong>Problema hipotético:</strong> informações de pedidos, endereços e status de entrega estão distribuídas entre planilhas, mensagens e registros manuais, dificultando o acompanhamento.</p>
+          <div class="project-grid">
+            <div><span class="label">Análise</span><p>Mapear o processo atual, identificar retrabalho e definir os dados essenciais por entrega: pedido, endereço, responsável, status e ocorrência.</p></div>
+            <div><span class="label">Proposta</span><p>Centralizar os registros em um fluxo integrado ao ERP, com etapas padronizadas: preparado, em rota, entregue e retorno à transportadora.</p></div>
+            <div><span class="label">Entregáveis</span><p>Fluxo do processo, requisitos funcionais, regras de atualização de status e indicadores para acompanhamento diário.</p></div>
+          </div>
+          <div class="project-result"><strong>Como avaliar:</strong> acompanhar a proporção de pedidos com status atualizado, ocorrências por rota, retrabalho de cadastro e tempo entre saída e confirmação da entrega. Esses indicadores só devem ser comparados após a coleta de dados reais; nenhum resultado foi presumido.</div>
+          <div class="case-visual" aria-label="Demonstração visual conceitual do projeto de acompanhamento de entregas">
+            <div class="case-visual-head"><div><h4>Visão visual da solução</h4><p>Painel de acompanhamento e fluxo operacional proposto</p></div><span class="demo-label">Protótipo conceitual</span></div>
+            <div class="demo-dashboard">
+              <div class="demo-dashboard-title">Quadro de pedidos · exemplo de organização</div>
+              <div class="demo-columns">
+                <div class="demo-col"><h5>Preparado</h5><div class="demo-task">Conferir pedido e endereço<small>Próxima ação: validar cadastro</small></div></div>
+                <div class="demo-col"><h5>Em rota</h5><div class="demo-task">Pedido liberado para entrega<small>Próxima ação: atualizar andamento</small></div></div>
+                <div class="demo-col"><h5>Entregue</h5><div class="demo-task">Confirmar entrega no sistema<small>Registrar data e responsável</small></div></div>
+                <div class="demo-col"><h5>Ocorrência / retorno</h5><div class="demo-task">Entrega não concluída<small>Informar motivo e retorno</small></div></div>
+              </div>
+            </div>
+            <div class="flow-wrap">
+              <h4 class="flow-title">Fluxograma do processo proposto</h4><p class="flow-subtitle">Da entrada do pedido até a confirmação ou tratamento da ocorrência.</p>
+              <div class="flowchart">
+                <div class="flow-node startend">Início <span>Pedido recebido</span></div><div class="flow-arrow" aria-hidden="true">↓</div>
+                <div class="flow-node"><strong>1. Registrar pedido</strong><span>Pedido, endereço, itens e responsável</span></div><div class="flow-arrow" aria-hidden="true">↓</div>
+                <div class="flow-node decision"><strong>2. Dados completos?</strong><span>Conferir os campos obrigatórios</span></div>
+                <div class="flow-branches">
+                  <div class="flow-branch"><div class="flow-arrow" aria-hidden="true">↓</div><div class="branch-label">Não</div><div class="flow-node"><strong>Corrigir cadastro</strong><span>Solicitar ajuste e validar novamente</span></div><div class="flow-arrow" aria-hidden="true">↻</div><div class="flow-node"><strong>Retornar à validação</strong><span>Revisar os dados corrigidos</span></div></div>
+                  <div class="flow-branch"><div class="flow-arrow" aria-hidden="true">↓</div><div class="branch-label">Sim</div><div class="flow-node"><strong>3. Preparar e organizar</strong><span>Separar pedido e definir responsável/ordem</span></div><div class="flow-arrow" aria-hidden="true">↓</div><div class="flow-node"><strong>4. Atualizar para “em rota”</strong><span>Registrar saída e acompanhar status</span></div><div class="flow-arrow" aria-hidden="true">↓</div><div class="flow-node decision"><strong>Entrega concluída?</strong><span>Confirmar retorno do responsável</span></div><div class="flow-branches" style="width:100%;grid-template-columns:1fr 1fr;gap:6px"><div class="flow-branch"><div class="branch-label">Sim</div><div class="flow-node"><strong>Confirmar entrega</strong><span>Salvar data e status final</span></div><div class="flow-arrow" aria-hidden="true">↓</div><div class="flow-node startend">Fim</div></div><div class="flow-branch"><div class="branch-label">Não</div><div class="flow-node"><strong>Registrar ocorrência</strong><span>Informar motivo e retorno à transportadora</span></div><div class="flow-arrow" aria-hidden="true">↓</div><div class="flow-node startend">Reprogramar</div></div></div></div>
+                </div>
+              </div>
+              <p class="flow-note">A proposta prioriza registros padronizados, responsáveis definidos e atualização do status em cada etapa. A integração com ERP depende de validação técnica e das regras do sistema utilizado.</p>
+              <div class="project-result"><strong>Regras e validações consideradas:</strong> não permitir a conclusão sem identificação do pedido; registrar data e responsável por cada mudança; exigir motivo quando a entrega não for concluída; manter o histórico de ocorrências. <strong>Limitação:</strong> a integração com ERP e notificações automáticas dependeria de levantamento técnico e validação com os usuários.</div>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-top"><span class="project-tag">Estudo de caso 02</span><span class="project-type">Produto · Backlog · User stories</span></div>
+          <h3>Backlog para acompanhamento de pedidos</h3>
+          <p class="project-problem"><strong>Objetivo:</strong> transformar uma necessidade operacional em requisitos claros e priorizados para uma solução digital.</p>
+          <div class="project-grid">
+            <div><span class="label">História de usuário</span><p>Como responsável pela operação, quero visualizar o status atualizado de cada pedido para identificar rapidamente quais entregas precisam de atenção.</p></div>
+            <div><span class="label">Critérios de aceite</span><p>O pedido deve exibir identificador, endereço, responsável, status e data da última atualização; mudanças de status precisam ficar registradas.</p></div>
+            <div><span class="label">Priorização</span><p>Começar pela consulta e atualização do status; depois incluir filtros, histórico de ocorrências e indicadores operacionais.</p></div>
+          </div>
+          <div class="project-result"><strong>Entregáveis sugeridos:</strong> backlog priorizado, história de usuário, critérios de aceite e regras de negócio. <strong>Decisão de prioridade:</strong> começar pela consulta e atualização de status, pois essas funções atendem à necessidade operacional central antes de incluir filtros e indicadores.</div>
+        </article>
+        <article class="project">
+          <div class="project-top"><span class="project-tag">Estudo de caso 03</span><span class="project-type">Melhoria contínua · Indicadores</span></div>
+          <h3>Padronização de uma rotina administrativa</h3>
+          <p class="project-problem"><strong>Problema hipotético:</strong> uma rotina depende de conferências repetidas e cada pessoa registra as informações de um jeito.</p>
+          <div class="project-grid">
+            <div><span class="label">Diagnóstico</span><p>Descrever as etapas atuais, localizar duplicidades, pontos de espera e campos com preenchimento inconsistente.</p></div>
+            <div><span class="label">Melhoria proposta</span><p>Criar checklist, definir responsáveis por etapa, padronizar os campos de registro e documentar como tratar exceções.</p></div>
+            <div><span class="label">Acompanhamento</span><p>Comparar volume de retrabalho, erros de preenchimento e tempo de conclusão antes e depois de uma eventual implantação.</p></div>
+          </div>
+          <div class="project-result"><strong>Entregáveis:</strong> mapa do processo atual e proposto, checklist operacional, matriz de responsabilidades e indicadores iniciais. <strong>Validação:</strong> a melhoria só pode ser considerada eficaz depois de comparar dados reais antes e depois de uma eventual implantação.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="competencias" aria-labelledby="t-comp">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">Habilidades</span>
+        <h2 id="t-comp">Competências</h2>
+      </div>
+      <div class="body skills">
+        <div>
+          <h3>Processos, ágil e produto</h3>
+          <div class="chips">
+            <span class="chip">Scrum</span><span class="chip">Kanban</span><span class="chip">Priorização de backlog</span><span class="chip">Escrita de user stories</span><span class="chip">Cerimônias ágeis</span><span class="chip">Mapeamento de processos</span><span class="chip">Análise de processos</span>
+          </div>
+        </div>
+        <div>
+          <h3>Sistemas e dados</h3>
+          <div class="chips">
+            <span class="chip">Operação de ERP</span><span class="chip">Conferência e validação de dados</span><span class="chip">Documentação funcional</span><span class="chip">Relatórios gerenciais</span><span class="chip">Levantamento de requisitos</span>
+          </div>
+        </div>
+        <div>
+          <h3>Ferramentas</h3>
+          <div class="chips">
+            <span class="chip">Trello</span><span class="chip">Notion</span><span class="chip">Miro</span><span class="chip">Excel</span><span class="chip">Pacote Office</span><span class="chip">ERP</span>
+          </div>
+        </div>
+        <div>
+          <h3>Soft skills</h3>
+          <div class="chips">
+            <span class="chip">Comunicação clara</span><span class="chip">Pensamento analítico</span><span class="chip">Atenção a detalhes</span><span class="chip">Proatividade</span><span class="chip">Trabalho em equipe</span><span class="chip">Ética</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="formacao" aria-labelledby="t-form">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">Estudos</span>
+        <h2 id="t-form">Formação acadêmica</h2>
+      </div>
+      <div class="body edu">
+        <article class="item">
+          <div class="when">Jan 2024 – Dez 2026<br>previsão de conclusão</div>
+          <div>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p class="where">UNIMAR, Universidade de Marília · Marília, SP · Curso em andamento</p>
+          </div>
+        </article>
+        <article class="item">
+          <div class="when">Concluído</div>
+          <div>
+            <h3>Ensino Médio Completo</h3>
+            <p class="where">E.E. Edson Vianei Alves · Garça, SP</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="band contact" id="contato" aria-labelledby="t-cont">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="label">Contato</span>
+        <h2 id="t-cont">Vinicius Garcia</h2>
+      </div>
+      <div class="rows">
+        <div class="row">
+          <div><span class="k">E-mail</span><span class="val">viniciusmigueloliveiragarcia@gmail.com</span></div>
+          <button type="button" data-copy="viniciusmigueloliveiragarcia@gmail.com">Copiar</button>
+        </div>
+        <div class="row">
+          <div><span class="k">Telefone</span><span class="val">(14) 9 9673-7620</span></div>
+          <button type="button" data-copy="(14) 9 9673-7620">Copiar</button>
+        </div>
+        <div class="row">
+          <div><span class="k">LinkedIn</span><span class="val"><a href="https://www.linkedin.com/in/vinicius-garcia-4b35721b8" target="_blank" rel="noopener">linkedin.com/in/vinicius-garcia-4b35721b8</a></span></div>
+        </div>
+        <div class="row">
+          <div><span class="k">Localização</span><span class="val">Marília, SP</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <span>Vinicius Garcia · Portfólio profissional</span>
+      <span>Atualizado em outubro de 2026</span>
+    </div>
+  </div>
+</section>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var toast = document.getElementById('toast');
+  var timer;
+  function show(msg){
+    toast.textContent = msg;
+    toast.classList.add('on');
+    clearTimeout(timer);
+    timer = setTimeout(function(){ toast.classList.remove('on'); }, 1800);
+  }
+  function fallback(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly','');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch(e) {}
+    document.body.removeChild(ta);
+    return ok;
+  }
+  document.querySelectorAll('button[data-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = btn.getAttribute('data-copy');
+      var done = function(){ show('Copiado'); };
+      var fail = function(){ show(fallback(text) ? 'Copiado' : 'Selecione o texto e copie'); };
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fail);
+        } else { fail(); }
+      } catch(e) { fail(); }
+    });
+  });
+})();
+</script>
+
+</body></html>
